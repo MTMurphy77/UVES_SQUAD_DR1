@@ -2,9 +2,10 @@
 ## First data release (DR1) of the UVES Spectral Quasar Absorption Database (SQUAD)
 
 DR1 is documented [in the paper](Paper/DR1_paper_submitted_2018-08-10.pdf):  
-Murphy M.T., Kacprzak G.G., Savorgnan G.A.D., Carswell R.F.,
-2018, Monthly Notices of the Royal Astronomical Society, submitted
-This reference will be updated if and when the paper is accepted. Please cite [the paper](Paper/DR1_paper_submitted_2018-08-10.pdf) if you make use of DR1.
+*Murphy M.T., Kacprzak G.G., Savorgnan G.A.D., Carswell R.F.,
+2018, Monthly Notices of the Royal Astronomical Society, submitted*  
+This reference will be updated if and when the paper is accepted.
+Please cite [the paper](Paper/DR1_paper_submitted_2018-08-10.pdf) if you make use of DR1.
 
 The [final DR1 quasar spectra are currently available here](LINK TO DATA PORTAL), on the gSTAR Data Management and Collaboration Platform (gDMCP).
 
