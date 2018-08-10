@@ -1,0 +1,50 @@
+Notes_FITS_Files.txt
+
+This file describes the basic structure of the UVES SQUAD final DR1 spectral FITS files. Please read this file if you plan to use the spectra!
+
+The primary header data unit (HDU) of each final spectrum FITS file contains the following:
+
+- A nine-dimensional array containing the continuum-normalised flux, uncertainty and expected fluctuation arrays, plus continuum, the validity status of each pixel, and the number of contributing spectra to each pixel and the chi-squared per degree of freedom around the final (weighted mean) flux both before and after sigma-clipping during the combination in UVES_popler. These data are described by the following header cards:
+    NAXIS   =                    2 / number of data axes
+    NAXIS1  =                87493 / length of data axis 1
+    NAXIS2  =                    9 / length of data axis 2
+    UP_ARR01= 'Normalized flux spectrum' / No units
+    UP_ARR02= 'Normalized error'   / No units; No info. in pixel if <0.0
+    UP_ARR03= 'Norm. expected fluctuation' / No units; No info. in pixel if <0.0
+    UP_ARR04= 'Continuum by which data are normalized' / Arbitrary units
+    UP_ARR05= 'Status  '           / 1=valid; -ve integer=clipped - see web for code
+    UP_ARR06= 'NPIX before clip'   / # pix contrib. to comb. pix. before sigma-clip
+    UP_ARR07= 'NPIX after clip'    / # pix contrib. to comb. pix. after sigma-clip
+    UP_ARR08= 'chisq. before clip' / chisq. about weighted mean before sigma-clip
+    UP_ARR09= 'chisq. after clip'  / chisq. about weighted mean after sigma-clip
+    ARRAY1  = 'Normalized flux spectrum' / No units
+    ARRAY2  = 'Normalized error'   / No units; No info. in pixel if <0.0
+    ARRAY3  = 'Norm. expected fluctuation' / No units; No info. in pixel if <0.0
+    ARRAY4  = 'Continuum by which data are normalized' / Arbitrary units
+    ARRAY5  = 'Status  '           / 1=valid; -ve integer=clipped - see web for code
+    ARRAY6  = 'NPIX before clip'   / # pix contrib. to comb. pix. before sigma-clip
+    ARRAY7  = 'NPIX after clip'    / # pix contrib. to comb. pix. after sigma-clip
+    ARRAY8  = 'chisq. before clip' / chisq. about weighted mean before sigma-clip
+    ARRAY9  = 'chisq. after clip'  / chisq. about weighted mean after sigma-clip
+The last 9 header cards duplicate information in the preceding 9 but are included for convenient compatibility with different FITS readers. Note that all DR1 quasar spectra have different values of NAXIS1 (the above is just an example). Many will be unfamiliar with the (normalised) "expected fluctuation array" (UP_ARR03/ARRAY3). This is related to the statistical uncertainty (i.e. the normalised error array in UP_ARR02/ARRAY2) but is derived during redispersion so that it better represents the expected fluctuations in flux from pixel to pixel, rather than just the formal statistical uncertainty in each pixel considered in isolation. Most people will want to use the (normalised) error instead of the expected fluctuation, but the latter is better to use, for example, when minimising chi-squared between a model and the spectral data. This is utilised in the VPFIT absorption line fitting code (Carswell & Webb, Astrophysics Source Code Library, 2014, http://ascl.net/1408.015) and explained in the Appendix of its associated manual.
+
+- Header cards for constructing the wavelength array, for example:
+    CRPIX1  =                    1 / Starting pixel (1-indexed)
+    CTYPE1  = 'LOGLIN  '           / Log-lin flag: Lin='LINEAR', Log-lin='LOGLIN'
+    DC-FLAG =                    1 / Log-linear flag: Linear=0, Log-linear=1
+    CRVAL1  =     3.51627370277848 / Center wavelength (log10) of first pixel
+    CD1_1   = 3.62161104717198E-06 / Dispersion: w[i]=wl[0]*10^{([i+1]-CRPIX1)*CD1_1
+    CDELT1  = 3.62161104717198E-06 / Dispersion: w[i]=wl[0]*10^{([i+1]-CRPIX1)*CD1_1
+  The CTYPE1 and DC-FLAG flags duplicate the same information, as do CD1_1 and CDELT1, but these different cards are used by other wide-spread FITS readers, so we include both here.
+  The comment fields of CD1_1 and CDELT1 define how to reconstruct the wavelength array from the information provided. Note that all quasar spectra have different values of CRVAL1 and CD1_1/CDELT1 but all DR1 spectra are on a log-linear wavelength scale.
+
+- Basic information about the spectrum and quasar, including the starting and ending wavelength of the wavelength array, the emission redshift used in the corresponding UVES_popler log (UPL) file (not necessarily the value of zem_Adopt in the DR1 quasar catalogue), the dispersion of the spectrum expressed as a velocity in km/s, the number of contributing UVES exposures, and the total exposure time from those exposures. For example:
+    UP_WLSRT=     3283.02131791165 / Center wavelength of first pixel [Angstroms]
+    UP_WLEND=     6809.82100205642 / Center wavelength of last pixel [Angstroms]
+    UP_ZEM  =                3.023 / Emission redshift
+    UP_DISP =                  2.5 / Dispersion [km/s]
+    UP_NEXP =                    3 / Number of exposures
+    UP_TEXP =            9065.0045 / Total exposure time [s]
+
+
+Each DR1 FITS file also has 3 table HDUs. These provide further information about the combined spectrum, its wavelength coverage map, and observational information about each contributing exposure. Each table column name (see the TTYPE header cards) is fairly descriptive and is accompanied by a brief description (in the corresponding TTYPE keywords).
