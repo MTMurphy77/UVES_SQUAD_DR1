@@ -16,6 +16,6 @@ This GitHub repository hosts the following files and folders:
   - [**src sub-folder:**](Paper/src) All the source files that contributed to the paper, including:
     - [**plots_for_paper.ipynb:**](Paper/src/plots_for_paper.ipynb) The Jupyter Notebook used to produce all plots in the paper, including all the analysis behind them.
 - [**DLAs folder:**](DLAs/) Further information about the 155 damped Lyman-alpha systems in DR1, including:
-  - [**DR1_DLAs.csv:**](DLAs/) Catalogue of DLAs extracted from the master catalogue, [DR1_quasars_master.csv](DR1_quasars_master.csv).
-  - [**DR1_DLAs.pdf:**](DLAs/) Velocity plots of all DLAs, similar to the example in [the paper](Paper/paper_submitted_2018-08-10.pdf) (figure 14).
+  - [**DR1_DLAs.csv:**](DLAs/DR1_DLAs.csv) Catalogue of DLAs extracted from the master catalogue, [DR1_quasars_master.csv](DR1_quasars_master.csv).
+  - [**DR1_DLAs.pdf:**](DLAs/DR1_DLAs.pdf) Velocity plots of all DLAs, similar to the example in [the paper](Paper/paper_submitted_2018-08-10.pdf) (figure 14).
 - [**Notes_FITS_Files.txt:**](Notes_FITS_Files.txt) This describes the basic structure of the DR1 final spectra FITS files. *Please read this file if you plan to use the spectra!*
