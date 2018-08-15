@@ -6,7 +6,7 @@ This is a database of 467 high-resolution quasar spectra from the data archive o
 DR1 is documented [in the paper](Paper/paper_submitted_2018-08-10.pdf):  
 *Murphy M.T., Kacprzak G.G., Savorgnan G.A.D., Carswell R.F.,
 2018, Monthly Notices of the Royal Astronomical Society, submitted*  
-This reference will be updated if and when the paper is accepted.
+This reference will be updated if and when the paper is accepted.  
 Please cite [the paper](Paper/paper_submitted_2018-08-10.pdf) if you make use of DR1.
 
 This GitHub repository hosts the following files and folders:
@@ -20,8 +20,8 @@ This GitHub repository hosts the following files and folders:
   - [**DR1_DLAs.pdf:**](DLAs/DR1_DLAs.pdf) Velocity plots of all DLAs, similar to the example in [the paper](Paper/paper_submitted_2018-08-10.pdf) (figure 14).
 - [**Notes_FITS_Files.txt:**](Notes_FITS_Files.txt) This describes the basic structure of the DR1 final spectra FITS files. *Please read this file if you plan to use the spectra!*
 
-The [final DR1 quasar spectra are currently available here](http://astronomy.swin.edu.au/~mmurphy/data/UVES_SQUAD_DR1) While [the paper](Paper/paper_submitted_2018-08-10.pdf) is being peer-reviewed. This contains the following files and folders:
+The [final DR1 quasar spectra are currently available here](http://astronomy.swin.edu.au/~mmurphy/data/UVES_SQUAD_DR1) while [the paper](Paper/paper_submitted_2018-08-10.pdf) is being peer-reviewed. This contains the following files and folders:
 - [**DR1_Final_Spectra.tar.gz:**](http://astronomy.swin.edu.au/~mmurphy/data/UVES_SQUAD_DR1/DR1_Final_Spectra.tar.gz) Final DR1 spectra of all 467 quasars (Note: Filesize is 2.1Gb).
 - [**Final_Spectra:**](http://astronomy.swin.edu.au/~mmurphy/data/UVES_SQUAD_DR1/Final_Spectra/) Folder containing spectra of individual quasars.
 
-*Note: If and when [the paper](Paper/paper_submitted_2018-08-10.pdf)  is accepted for publication, the final spectra and all the data reduction products for each quasar will later be moved to the [gSTAR Data Management and Collaboration Platform](https://data-portal.hpc.swin.edu.au) (gDMCP).*
+*Note: If and when [the paper](Paper/paper_submitted_2018-08-10.pdf) is accepted for publication, the final spectra and all the data reduction products for each quasar will later be moved to the [gSTAR Data Management and Collaboration Platform](https://data-portal.hpc.swin.edu.au) (gDMCP).*
