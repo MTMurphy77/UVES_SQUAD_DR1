@@ -1,6 +1,8 @@
 # UVES_SQUAD_DR1
 ## First data release (DR1) of the UVES Spectral Quasar Absorption Database (SQUAD)
 
+<a href="https://doi.org/10.5281/zenodo.1345974"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1345974.svg" alt="DOI"></a>
+
 This is a database of 467 high-resolution quasar spectra from the data archive of the [Ultraviolet and Visual Echelle Spectrograph](https://www.eso.org/public/teles-instr/paranal-observatory/vlt/vlt-instr/uves/) (UVES) on the [European Southern Observatory](https://www.eso.org/)'s 8-metre-diameter [Very Large Telescope](https://www.eso.org/public/teles-instr/paranal-observatory/vlt/).
 
 DR1 is documented [in the paper](Paper/paper_submitted_2018-08-10.pdf):  
@@ -25,4 +27,4 @@ The [final DR1 quasar spectra are currently available here](http://astronomy.swi
 - [**Final_Spectra:**](http://astronomy.swin.edu.au/~mmurphy/data/UVES_SQUAD_DR1/Final_Spectra/) Folder containing spectra of individual quasars. The (gzipped) tar file for each quasar contains the final spectrum in FITS format and the UVES_popler log (UPL) file that created it.
 - [**Reductions:**](http://astronomy.swin.edu.au/~mmurphy/data/UVES_SQUAD_DR1/Reductions/) Folder containing a (gzipped) tar file for each quasar which contains the data reduction scripts and all intermediate and final data reduction products. These are required to recreate the final DR1 spectrum of a quasar using the UPL file. Users can also use the UPL file as a starting point for modifying the final spectrum or improving various aspects of the spectrum.
 
-*Note: The hosting site of the data will change soon to the [gSTAR Data Management and Collaboration Platform](https://data-portal.hpc.swin.edu.au) (gDMCP). However, this GitHub repository will remain the entrance point to the dataset and can be cited using its DOI, i.e. XXXXXXX.*
+*Note: The hosting site of the data will change soon to the [gSTAR Data Management and Collaboration Platform](https://data-portal.hpc.swin.edu.au) (gDMCP). However, this GitHub repository will remain the entrance point to the dataset and can be cited using its DOI, i.e. doi:10.5281/zenodo.1345974*
