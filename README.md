@@ -7,7 +7,7 @@ This is a database of 467 high-resolution quasar spectra from the data archive o
 
 DR1 is documented [in the paper](Paper/paper_accepted_2018-10-16.pdf):  
 *Murphy M.T., Kacprzak G.G., Savorgnan G.A.D., Carswell R.F.,
-2018, [Monthly Notices of the Royal Astronomical Society](http://dx.doi.org/10.1093/mnras/sty2834), accepted, [arXiv:1810.06136](https://arxiv.org/abs/1810.06136)*  
+2018, [Monthly Notices of the Royal Astronomical Society](http://dx.doi.org/10.1093/mnras/sty2834), 482, 3458, [arXiv:1810.06136](https://arxiv.org/abs/1810.06136)*  
 Please cite [the paper](Paper/paper_accepted_2018-10-16.pdf) if you make use of DR1.
 
 The [final DR1 quasar spectra are hosted here](https://data-portal.hpc.swin.edu.au/dataset/uves-squad-dr1) on the [gSTAR Data Management and Collaboration Platform](https://data-portal.hpc.swin.edu.au) (gDMCP). However, this GitHub repository will remain the entrance point to the dataset and can be cited using its DOI, i.e. doi:10.5281/zenodo.1345974. The [gDMCP data hosting site](https://data-portal.hpc.swin.edu.au/dataset/uves-squad-dr1) contains the following files:
